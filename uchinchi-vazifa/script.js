@@ -33,3 +33,7 @@ let str = "pdp Academy";
            console.log('Yig`indisi:' ,2+2)
 
 //dassssssssssssssssssssssss
+//dassssssssssssssssssssssss
+//dassssssssssssssssssssssss
+//dassssssssssssssssssssssss
+//dassssssssssssssssssssssss
