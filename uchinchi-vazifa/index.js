@@ -92,8 +92,8 @@
 
 //  let a = 'ABC'
 // let b = 'BCA'
-//  let c = a+b;
-// let d = a+b;
+ 
+
 //  function test(c,d){
 // for( let i=0;i<c.length;i++ ){
 //   for( let j=0;j<d.length;j++ ){
@@ -105,6 +105,8 @@
 //   }
 // }
 // }
+
+
 // console.log(test(c,d))
 
 // function map(f, a) {
@@ -113,17 +115,49 @@
 //    for (i = 0; i != a.length; i++)
 //      result[i] = f(a[i]);
 //    return result;
-//  }
-let a = 'ABC'
-let b = 'BCA'
-let a1 = a.split('').sort()
-let a2 = b.split('').sort()
-function test(){
-    for(let i=0; i<a1.length; i++){
-        for(let j=0; j<a2.length; j++){
-            if(a1[i]===a2[i]) return true;
-            else return false;
-        }
-    }
-}
-console.log(test())
+//  }  
+
+
+// let a = 'ABC'
+// let b = 'BCA'
+// let a1 = a.split('').sort()
+// let a2 = b.split('').sort()
+// function test(){
+//     for(let i=0; i<a1.length; i++){
+//         for(let j=0; j<a2.length; j++){
+//             if(a1[i]===a2[i]) return true;
+//             else return false;
+//         }
+//     }
+   
+// }
+// console.log(test(a1,a2)) 
+
+
+// for(let i=0; i<100; i++){
+//   if(i%3===0 ||i%5===0){
+//     console.log(i)
+//   }
+
+// }
+// let count =0 
+// for(let i =0; i<100; i++){
+//   if(i%3==0||i%5==0){
+//     count+=i
+//   }
+// }
+// console.log(count)
+
+// str1='abcd'
+// str2='cdba'
+// if(str1.length===str2.length && str1.split('').sort().join()==str2.split('').sort().join()){
+//   console.log(true)
+// }else{
+//   console.log(false)
+// }
+function test(name ,age, email ){
+  name.length<=4 ? console.log('error'):console.log('kelingiz')
+age <=15 ? console.log('yoqol'):console.log('welcom')
+email.length<=10 ? console.log('noto`g`ri'): console.log('to`g`ri')
+} 
+test('AZree',17,'abdumu@gmail')

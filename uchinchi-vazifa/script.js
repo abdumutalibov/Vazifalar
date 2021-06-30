@@ -31,3 +31,7 @@ let str = "pdp academy";
            console.log('O`rta arifmetigi:',(p+d)/2 );
            console.log('O`rta geometrik:',(p+d)**0.5);
            console.log('Yig`indisi:' ,2+2)
+
+
+
+           
