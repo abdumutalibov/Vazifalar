@@ -70,25 +70,25 @@
 //   console.log(false)
 // }
 
-let a = "ABC";
-let b = "BCA";
-let c = a+b
-let d = b+a
-function test(d, c) {
-  for (let i = 0; i < c.length; i++) {
-     c++
-    for (let j = 0; j < d.length; j++) {
-     d++
-      if (c === d) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  }
+// let a = "ABC";
+// let b = "BCA";
+// let c = a+b
+// let d = b+a
+// function test(d, c) {
+//   for (let i = 0; i < c.length; i++) {
+//      c++
+//     for (let j = 0; j < d.length; j++) {
+//      d++
+//       if (c === d) {
+//         return true;
+//       } else {
+//         return false;
+//       }
+//     }
+//   }
   
-}
-console.log(test(c, d));
+// }
+// console.log(test(c, d));
 
 //  let a = 'ABC'
 // let b = 'BCA'
@@ -114,3 +114,16 @@ console.log(test(c, d));
 //      result[i] = f(a[i]);
 //    return result;
 //  }
+let a = 'ABC'
+let b = 'BCA'
+let a1 = a.split('').sort()
+let a2 = b.split('').sort()
+function test(){
+    for(let i=0; i<a1.length; i++){
+        for(let j=0; j<a2.length; j++){
+            if(a1[i]===a2[i]) return true;
+            else return false;
+        }
+    }
+}
+console.log(test())

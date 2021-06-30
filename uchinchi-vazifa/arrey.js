@@ -19,3 +19,43 @@ let phrase = word1[random1] + ' ' +word2[random2] + ' ' + word3[random3];
 console.log(phrase)
 }
 make()
+
+console.log('=============================')
+
+let arra = ['Kolya', 'Vadim', 'OLya']
+arra[0]='Galin'
+arra[3]='Bob'
+arra[4]='Power'
+
+
+arra.push('Dima ','Igor','jony')
+console.log(arra)
+arra.shift();
+arra.pop();
+
+console.log(arra)
+
+arra.unshift('Kolay')
+delete arra[6]
+
+console.log(arra)
+console.log('=============================')
+let arrOne =['Vanya', 'ishtvan', 'Olya'];
+arrOne.splice(1,1);
+console.log(arrOne)
+
+let arrTwo =['Vanya', 'ishtvan', 'Olya'];
+let removed = arrTwo.splice(1,1);
+console.log(removed);
+
+let arrThree = ['Vanya', 'Ishtvan', 'Ola'];
+arrThree.splice(0,1,'aasa')
+console.log(arrThree,'j')
+
+let arrFour=['Vanya', 'Ishtvan', 'Ola']
+arrFour.splice(3,0 ,'KOlya','Ruslan')
+console.log(arrFour)
+
+let arrFive=['Vanya', 'Ishtvan', 'Ola'];
+arrFive.splice(2,1)
+console.log(arrFive)
