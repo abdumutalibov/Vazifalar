@@ -9,23 +9,27 @@
 //  }
 // }
 // console.log(count)
-function compareStr(){
-let a = 'ABC'
-let b = 'BCA'
+// function compareStr(){
+// let a = 'ABC'
+// let b = 'BCA'
 
-let c= a.localeCompare(b)
-console.log(c)
-}
-if(a.localeCompare(b)){
-   console.log(true)
-}else {
-console.log(false)
-}
+//  let c= a.localeCompare(b)
+// console.log(c)
+// }
+// if(a.localeCompare(b)){
+//    console.log(true)
+// }else {
+// console.log(false)
+// }
 // if(a===b){
 //   console.log(true)
 // }else{
 //   console.log(false)
 // } 
+
+
+// let a = 'ABC'
+// let b = 'BCA'
 
 // for( let i=0;i<a.length;i++ ){
 //   for( let j=0;j<b.length;j++ ){
@@ -38,14 +42,22 @@ console.log(false)
 //   }
 // }
 
-
-
-// unction strcmp(a, b) {
-//   a = a.toString(), b = b.toString();
-//   for (var i=0,n=Math.max(a.length, b.length); i<n && a.charAt(i) === b.charAt(i); ++i);
-//   if (i === n) return 0;
-//   return a.charAt(i) > b.charAt(i) ? -1 : 1;
+//  let a = 'ABC'
+//  let b = 'BCA'
+// function strcmp(a, b) {
+//   a = a.localeCompare(b), b =b.localeCompare (a);
+//   for (var i=0,n=Math.max(a.length, b.length); i<n && a.charAt(i) === b.charAt(i); ++i){
+//   if (i === n){
+//    return true;
+    
+//   } else{
+//      return false;
+//        return a.charAt(i) > b.charAt(i) ? -1 : 1;
+//   }
+//  }
+//  console.log(a,b)
 // }
+
 // let a = ['ABC'];
 // let b = ['BCA'];
 
@@ -60,3 +72,49 @@ console.log(false)
  
 //   console.log(false)
 // }
+
+
+// let a = 'ABC'
+// let b = 'BCA'
+// let c = a
+// let d = b
+// function test(){
+//    for(let i=0; i< a.length; i++){
+//       for (let j=0; i< b.length; j++){
+// if(c===d){
+//    return true;
+// }else {
+//    return false;
+// }
+//  }
+//  }
+// }
+//  console.log(test(c,d))
+
+
+
+ let a = 'ABC'
+let b = 'BCA'
+ let c = a+b;
+let d = a+b;
+ function test(c,d){
+for( let i=0;i<c.length;i++ ){
+  for( let j=0;j<d.length;j++ ){
+    if(c.charAt(i)===d.charAt(j)){
+   return(true)
+    }else{
+    return(false)
+    }
+  }
+}
+}
+console.log(test(c,d))
+
+
+// function map(f, a) {
+//    var result = [],  Create a new Array
+//        i;
+//    for (i = 0; i != a.length; i++)
+//      result[i] = f(a[i]);
+//    return result;
+//  }
