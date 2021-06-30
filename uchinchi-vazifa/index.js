@@ -1,4 +1,3 @@
-
 //    var number = 123456
 //     var str = number.toString()
 //   var count = 0;
@@ -25,8 +24,7 @@
 //   console.log(true)
 // }else{
 //   console.log(false)
-// } 
-
+// }
 
 // let a = 'ABC'
 // let b = 'BCA'
@@ -49,7 +47,7 @@
 //   for (var i=0,n=Math.max(a.length, b.length); i<n && a.charAt(i) === b.charAt(i); ++i){
 //   if (i === n){
 //    return true;
-    
+
 //   } else{
 //      return false;
 //        return a.charAt(i) > b.charAt(i) ? -1 : 1;
@@ -64,52 +62,50 @@
 // console.log(typeof a);
 // console.log(typeof b);
 
-
 // if (a.localeCompare(a===b)){
 //   console.log(true)
-  
+
 // }else{
- 
+
 //   console.log(false)
 // }
 
-
-// let a = 'ABC'
-// let b = 'BCA'
-// let c = a
-// let d = b
-// function test(){
-//    for(let i=0; i< a.length; i++){
-//       for (let j=0; i< b.length; j++){
-// if(c===d){
-//    return true;
-// }else {
-//    return false;
-// }
-//  }
-//  }
-// }
-//  console.log(test(c,d))
-
-
-
- let a = 'ABC'
-let b = 'BCA'
- let c = a+b;
-let d = a+b;
- function test(c,d){
-for( let i=0;i<c.length;i++ ){
-  for( let j=0;j<d.length;j++ ){
-    if(c.charAt(i)===d.charAt(j)){
-   return(true)
-    }else{
-    return(false)
+let a = "ABC";
+let b = "BCA";
+let c = a+b
+let d = b+a
+function test(d, c) {
+  for (let i = 0; i < c.length; i++) {
+     c++
+    for (let j = 0; j < d.length; j++) {
+     d++
+      if (c === d) {
+        return true;
+      } else {
+        return false;
+      }
     }
   }
+  
 }
-}
-console.log(test(c,d))
+console.log(test(c, d));
 
+//  let a = 'ABC'
+// let b = 'BCA'
+//  let c = a+b;
+// let d = a+b;
+//  function test(c,d){
+// for( let i=0;i<c.length;i++ ){
+//   for( let j=0;j<d.length;j++ ){
+//     if(c.charAt(i)===d.charAt(j)){
+//    return(true)
+//     }else{
+//     return(false)
+//     }
+//   }
+// }
+// }
+// console.log(test(c,d))
 
 // function map(f, a) {
 //    var result = [],  Create a new Array
