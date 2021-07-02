@@ -48,7 +48,7 @@
 // console.log(removed);
 
 // let arrThree = ['Vanya', 'Ishtvan', 'Ola'];
-// arrThree.splice(1,1,'aasa')
+// arrThree.splice(1,1,13213)
 // console.log(arrThree,'j')
 
 // let arrFour=['Vanya', 'Ishtvan', 'Ola']
@@ -56,12 +56,12 @@
 // console.log(arrFour)
 
 // let arrFive=['Vanya', 'Ishtvan', 'Ola'];
-// arrFive.splice(2,1)
+// arrFive.splice(1,0,345435)
 // console.log(arrFive)
 
 //  let arrOne =['Vanya', 'ishtvan','KOlaya', 'Olya'];
 
-//  let arrTwo = arrOne.slice(0, 4);
+//  let arrTwo = arrOne.slice(1, 2,555);
 // console.log(arrTwo);
 
 // let arrThree=arrOne.slice(-4, -1);
@@ -74,14 +74,14 @@
 // let arrTwo = arrOne.concat('Petya')
 // console.log(arrTwo)
 
+//                indexOf
 //   let arr = ['Vanya', 'ishtvan','Kolya', 'Olya'];
 
-//    indexOf
 //   console.log(arr.indexOf('ishtvan'))
 //   console.log(arr.indexOf('Kolya',2))
 //   console.log(arr.indexOf('ishtvan',2))
 
-//  includes
+//             includes
 //  console.log(arr.includes('ishtvan'))
 //  console.log(arr.includes('Olya'))
 //  console.log(arr.includes('Vanya',2))
@@ -97,6 +97,7 @@
 //   return item.name === 'Olya'
 // });
 
+//=============         Filter
 // let resultOne = arr.filter(item => item.age == 18);
 // console.log(resultOne)
 
@@ -127,8 +128,7 @@
    console.log(result)
    */
 
-/*
-   ...........SPLIT
+/*...........SPLIT
    let str = 'Vanya, Ishtven ,Olya';
    let arr = str.split(' ');
    console.log(arr)
@@ -204,7 +204,7 @@ console.log(`name ${item}: is locate ${index}: position in ${array}`)
    console.log(arr2)
    */
 
-   /*
+/*
    .........Reduce
 let arr = ["Vanya", "ishtvan", "Kolya", "Olya"];
 let arr2 = arr.reduce(function(previus, item){
@@ -215,10 +215,58 @@ let arr2 = arr.reduce(function(previus, item){
 console.log(`name ${arr2}`)
 */
 
-
-
+/*
 let arr = ["Vanya", "ishtvan", "Kolya", "Olya"];
 console.log(typeof arr);
 
 arr.name='Kolya'
 console.log(arr)
+*/
+let a='abcd';
+let b='dcba';
+if(a.length==b.length && a.split('').sort().join()==b.split('').sort().join()){
+   console.log(true)
+}else{
+   console.log(false)
+}
+
+
+
+
+const array = [
+  22, 4, 65, 3, 66, 5, 23, 57,43, 21,53,73,113,25 ,92, 14, 432, 234, 95, 959, 2, 7, 11, 13,
+];
+
+function isPrime(num) {
+  for (let i = 2; num > i; i++) {
+    if (num % i == 0) {
+      // console.log('qogani juft va toq ', num);
+      return false;
+    }
+  }
+  
+  return num;
+}
+
+console.log('Tub sonlar',array.filter(isPrime).sort((a, b) => a - b));
+
+function toq(){
+   return array.filter((item)=>item%2!==0)
+}
+console.log('Toq sonlar',toq().sort((a,b)=>a-b))
+
+function juft(){
+      console.log('Juft sonlar',array.filter((item)=>item%2===0).sort((a,b)=>a-b))
+}
+juft()
+
+
+// let a = [1,2,3,4]
+// let b = [4,3,2,1]
+// if(a===b && a.sort((a,b)=>a-b).join()==b.sort((a,b)=>a-b).join()){
+//    console.log(true)
+// }else{
+//    console.log(false)
+// }
+
+//console.log(b
