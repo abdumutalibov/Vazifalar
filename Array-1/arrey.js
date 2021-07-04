@@ -222,6 +222,9 @@ console.log(typeof arr);
 arr.name='Kolya'
 console.log(arr)
 */
+
+/* 
+.....................................UY UWI                            
 let a='abcd';
 let b='dcba';
 if(a.length==b.length && a.split('').sort().join()==b.split('').sort().join()){
@@ -234,7 +237,7 @@ if(a.length==b.length && a.split('').sort().join()==b.split('').sort().join()){
 
 
 const array = [
-  22, 4, 65, 3, 66, 5, 23, 57,43, 21,53,73,113,25 ,92, 14, 432, 234, 95, 959, 2, 7, 11, 13,
+  22, 4, 65, 3, 66,91, 5, 23, 57,43, 21,53,73,113,25 ,92, 14, 432, 234, 95,719, 959, 2, 7, 11, 13,
 ];
 
 function isPrime(num) {
@@ -259,7 +262,7 @@ function juft(){
       console.log('Juft sonlar',array.filter((item)=>item%2===0).sort((a,b)=>a-b))
 }
 juft()
-
+*/
 
 // let a = [1,2,3,4]
 // let b = [4,3,2,1]
@@ -269,4 +272,71 @@ juft()
 //    console.log(false)
 // }
 
-//console.log(b
+//console.log(b)
+
+let dum = [
+  { name: "Jony", age: 17, budget: 3330 },
+  { name: "Tom", age: 40, budget: 6210 },
+  { name: "Jerry", age: 16 , budget: 2140 },
+  { name: "Teylar", age: 31, budget: 4660 },
+  { name: "Bop", age: 23, budget: 8440 },
+];
+
+//....................forEach
+// for (let tup of dum) {
+//   console.log(tup);
+//}
+//dum.forEach(name=>console.log(name),age=> console.log(age))
+   
+
+//.......................map
+//  const tup= dum.map(dum=>`${dum.age *5 } ${dum.name+'asdasdasd' } ${dum.budget*20}` )
+// console.log(tup)
+
+
+//...............................filter
+// let atut = dum.filter(num=>{
+//    if(num.age<=18){
+//       return true
+//    }
+// })
+// console.log(atut)
+
+
+//.............................Reduce
+// let amout=0
+// for(let i=0;i<dum.length;i++){
+//    amout+=dum[i].budget
+//    console.log(dum[i].budget);
+// }
+
+// let amout = dum.reduce((total,red)=>{
+// return total+red.budget
+// }, 0,9)
+// console.log(amout);
+
+// let amout = dum.reduce((a,b)=>a+b.budget,0)
+// console.log(amout);
+
+
+//.....................Find
+// const tab = dum.find(d => d.age === 16)
+// console.log(tab)
+
+
+// const teb = dum.findIndex(d => d.age === 16)
+// console.log(teb)
+
+//..................newDum
+
+let amout= dum
+.filter(m=>m.budget>2000)
+  .map(u=> {
+return {
+   info: `${u.name} ${u.age}`, 
+   budget: u.budget
+}
+  })
+ .reduce((total,d)=>total + d.budget, 0);
+
+  console.log(amout);
