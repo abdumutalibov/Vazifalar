@@ -330,13 +330,24 @@ let dum = [
 //..................newDum
 
 let amout= dum
-.filter(m=>m.budget>2000)
+.filter(m=>m.budget>3000)
   .map(u=> {
 return {
    info: `${u.name} ${u.age}`, 
    budget: u.budget
 }
+
   })
+  
  .reduce((total,d)=>total + d.budget, 0);
 
   console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  console.log(amout);
+  
