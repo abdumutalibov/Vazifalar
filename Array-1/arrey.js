@@ -343,7 +343,7 @@ return {
 
   console.log(amout);
   console.log(amout);
-  console.log(amout);
+  console.log("\^reet\gi");
   console.log(amout);
   console.log(amout);
   console.log(amout);
