@@ -8,6 +8,34 @@
 //   console.log(str + " " + n);
 // }
 
+
+// let pow =100
+// for(let i =0; i<=100;i++){
+//    if(i%2==0){
+//       console.log(i)
+//     }
+//    //  else{
+//    //    console.log()
+//    // }
+//}
+
+// let pot =0
+// for(let i=0; i<100; i++){
+//    if(i%3==0){
+//       pot+=i
+//       console.log(i)
+//    }
+// }
+// console.log(pot)
+
+
+
+
+
+
+
+
+
 let str = "pdp academy";
          
         let d = 0;
