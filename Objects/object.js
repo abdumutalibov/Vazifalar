@@ -136,7 +136,7 @@
 //  for(let key in userInfo.address){
 //    console.log(key)
 //    console.log(userInfo.address[key])
-//  }
+//  }g
 
 
 //......................Method obect
@@ -221,7 +221,88 @@
 // console.log(new info('Vasya',345,'Tashkent'))
 // console.log(new info('Lena',33,'Green'))
 
-let user={
-  '58':'Znachenitya'
+// let user={
+//   '58':'Znachenitya'
+// }
+// console.log(user[58])
+// console.log(user[58])
+// console.log(user[58])
+// console.log(user[58])
+// console.log(user[58])
+// console.log(user[58])
+
+
+
+// let obj=[{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// },{
+//   name:'Jony',
+//   age:24,
+//   country:'Tashkent'
+// }]
+
+
+// obj.forEach((val)=>{
+//   val.status='Apple'
+// })
+// console.log(obj);
+
+
+
+
+
+
+
+
+
+let users = [
+  {id:1, name : "John", age: 200, surname: "Johnson" },
+  { name: "Pete", age: 182, surname: "Peterson" },
+  { id:8,name: "Ann", age: 19, surname: "Hathaway" },
+  { name: "John", age: 220, surname: "Johnson" },
+  { name: "Pete", age: 118, surname: "Peterson" },
+  { name: "Ann", age: 190, surname: "Hathaway" }, 
+  {id:5, name: "John", age: 220, surname: "Johnson" },
+  { name: "Pete", age: 118, surname: "Peterson" },
+  { name: "Ann", age: 190, surname: "Hathaway" },
+];
+
+function byField(field) {
+  return (a, b) => a[field] > b[field] ? 1 : -1;
 }
-console.log(user[58])
+
+users.sort(byField('name'));
+users.forEach(user => console.log(user.name)); // Ann, John, Pete
+
+users.sort(byField('age'));
+users.forEach(user => console.log(user.age)); // Pete, Ann,
+
+ users.sort(byField('id'));
+users.forEach(user => console.log(user.id)); // Pete, Ann, John
+
+
+// users.sort((a,b)=> a.age-b.age)
+// users.sort((a,b)=> a.id-b.id)
+// console.log(users)
