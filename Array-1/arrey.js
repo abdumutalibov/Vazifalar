@@ -18,7 +18,12 @@
 // let phrase = word1[random1] + ' ' +word2[random2] + ' ' + word3[random3];
 // console.log(phrase)
 // }
-// make()
+
+//  make()
+
+//  function teak(){
+//     let wor =[    ]
+//  }
 
 // console.log('=============================')
 
@@ -204,16 +209,16 @@ console.log(`name ${item}: is locate ${index}: position in ${array}`)
    console.log(arr2)
    */
 
-/*
-   .........Reduce
-let arr = ["Vanya", "ishtvan", "Kolya", "Olya"];
-let arr2 = arr.reduce(function(previus, item){
-  console.log(previus)
-  console.log(item)
-  return `${item}, ${previus}`
-});
-console.log(`name ${arr2}`)
-*/
+
+//    // .........Reduce
+// let arr = ["Vanya", "ishtvan", "Kolya", "Olya"];
+// let arr2 = arr.reduce(function(previus, item){
+//   console.log(previus, 'previus')
+//   console.log(item)
+//   return `${item}, ${previus}`
+// });
+// console.log(`name ${arr2}`)
+
 
 /*
 let arr = ["Vanya", "ishtvan", "Kolya", "Olya"];
@@ -223,46 +228,46 @@ arr.name='Kolya'
 console.log(arr)
 */
 
-/* 
-.....................................UY UWI                            
-let a='abcd';
-let b='dcba';
-if(a.length==b.length && a.split('').sort().join()==b.split('').sort().join()){
-   console.log(true)
-}else{
-   console.log(false)
-}
+
+// .....................................UY UWI                            
+// let a='abcd';
+// let b='dcba';
+// if(a.length==b.length && a.split('').sort().join()==b.split('').sort().join()){
+//    console.log(true)
+// }else{
+//    console.log(false)
+// }
 
 
 
 
-const array = [
-  22, 4, 65, 3, 66,91, 5, 23, 57,43, 21,53,73,113,25 ,92, 14, 432, 234, 95,719, 959, 2, 7, 11, 13,
-];
+// const array = [
+//   22, 4, 65, 3, 66,91, 5, 23, 57,43, 21,53,73,113,25 ,92, 14, 432, 234, 95,719, 959, 2, 7, 11, 13,
+// ];
 
-function isPrime(num) {
-  for (let i = 2; num > i; i++) {
-    if (num % i == 0) {
-      // console.log('qogani juft va toq ', num);
-      return false;
-    }
-  }
+// function isPrime(num) {
+//   for (let i = 2; num > i; i++) {
+//     if (num % i == 0) {
+//       // console.log('qogani juft va toq ', num);
+//       return false;
+//     }
+//   }
   
-  return num;
-}
+//   return num;
+// }
 
-console.log('Tub sonlar',array.filter(isPrime).sort((a, b) => a - b));
+// console.log('Tub sonlar',array.filter(isPrime).sort((a, b) => a - b));
 
-function toq(){
-   return array.filter((item)=>item%2!==0)
-}
-console.log('Toq sonlar',toq().sort((a,b)=>a-b))
+// function toq(){
+//    return array.filter((item)=>item%2!==0)
+// }
+// console.log('Toq sonlar',toq().sort((a,b)=>a-b))
 
-function juft(){
-      console.log('Juft sonlar',array.filter((item)=>item%2===0).sort((a,b)=>a-b))
-}
-juft()
-*/
+// function juft(){
+//       console.log('Juft sonlar',array.filter((item)=>item%2===0).sort((a,b)=>a-b))
+// }
+// juft()
+
 
 // let a = [1,2,3,4]
 // let b = [4,3,2,1]
@@ -274,14 +279,28 @@ juft()
 
 //console.log(b)
 
-let dum = [
-  { name: "Jony", age: 17, budget: 3330 },
-  { name: "Tom", age: 40, budget: 6210 },
-  { name: "Jerry", age: 16 , budget: 2140 },
-  { name: "Teylar", age: 31, budget: 4660 },
-  { name: "Bop", age: 23, budget: 8440 },
-];
+// let dum = [
+//   { name: "Jony", age: 17, budget: 3330 },
+//   { name: "Tom", age: 40, budget: 6210 },
+//   { name: "Jerry", age: 16 , budget: 2140 },
+//   { name: "Teylar", age: 31, budget: 4660 },
+//   { name: "Bop", age: 23, budget: 8440 },
+// ];
+// let res = dum.reduce((total,item)=>{
+//    if(item.age>17){
+//       total+=item.budget
+//    }
+//    return total
+// },0)
+// console.log(res);
 
+// const result = dum.reduce((total,temp,arr)=>{
+//   if(temp.age>17){
+//     total+=temp.budget
+//   }
+//   return total
+// },0)
+// console.log('result',result);
 //....................forEach
 // for (let tup of dum) {
 //   console.log(tup);
@@ -329,25 +348,262 @@ let dum = [
 
 //..................newDum
 
-let amout= dum
-.filter(m=>m.budget>3000)
-  .map(u=> {
-return {
-   info: `${u.name} ${u.age}`, 
-   budget: u.budget
-}
+// let amout= dum
+// .filter(m=>m.budget>3000)
+//   .map(u=> {
+// return {
+//    info: `${u.name} ${u.age}`, 
+//    budget: u.budget
+// }
 
+//   })
+  
+//  .reduce((total,d)=>total + d.budget, 0);
+
+//   console.log(amout);
+//   console.log(amout);
+//   console.log("\^reet\gi");
+//   console.log(amout);
+//   console.log(amout);
+//   console.log(amout);
+//   console.log(amout);
+//   console.log(amout);
+//   console.log(amout);
+  
+// let myArray = [
+//    {id: 0, name: "Jhon"},
+//    {id: 1, name: "Sara"},
+//    {id: 2, name: "Domnic"},
+//    {id: 3, name: "Bravo"}
+//  ],
+     
+//  //Find index of specific object using findIndex method.    
+//  objIndex = myArray.findIndex((obj => obj.id == 1));
+ 
+//  //Log object to Console.
+//  console.log("Before update: ", myArray[objIndex])
+ 
+//  //Update object's name property.
+//  myArray[objIndex].name = "Laila"
+ 
+//  //Log object to console again.
+//  console.log("After update: ", myArray[objIndex])
+
+// const addresses = [  ]; // Some array I got from async call
+
+// const uniqueAddresses = Array.from(new Set(addresses.map(a => a.id)))
+//  .map(id => {
+//    return addresses.find(a => a.id === id)
+//  })
+
+
+//  var arrayWithDuplicates = [
+//    {"type":"LICENSE", "licenseNum": "12345", state:"NV"},
+//    {"type":"LICENSE", "licenseNum": "A7846", state:"CA"},
+//    {"type":"LICENSE", "licenseNum": "12345", state:"OR"},
+//    {"type":"LICENSE", "licenseNum": "10849", state:"CA"},
+//    {"type":"LICENSE", "licenseNum": "B7037", state:"WA"},
+//    {"type":"LICENSE", "licenseNum": "12345", state:"NM"}
+// ];
+
+// function removeDuplicates(originalArray, prop) {
+//     var newArray = [];
+//     var lookupObject  = {};
+
+//     for(var i in originalArray) {
+//        lookupObject[originalArray[i][prop]] = originalArray[i];
+//     }
+
+//     for(i in lookupObject) {
+//         newArray.push(lookupObject[i]);
+//     }
+//      return newArray;
+// }
+
+// var uniqueArray = removeDuplicates(arrayWithDuplicates, "licenseNum");
+// console.log("uniqueArray is: " + JSON.stringify(uniqueArray));
+
+//========================Uy ishi
+
+// const arr = [
+//    { key: 1, name: "A", condition: true },
+//    { key: 4, name: "B", condition: false },
+//    { key: 7, name: "C", condition: true },
+//    { key: 11, name: "D", condition: true },
+//    { key: 12, name: "E", condition: false }
+//  ]
+
+//  const arrayToObject1 = (arr, key) => {
+//      return arr.reduce((obj, item) => {
+//          obj[item[key]] = item
+//          return obj
+//      }, {})}
+
+//  const arrayToObject2 = (array, key) =>
+//      array.reduce(
+//      (obj, item) => ({
+//        obj, [item[key]]: item
+//      }),{});
+
+//  const arrayToObject3 = (arr, key) => 
+// Object.assign({}, arr.map(item => ({[item[key]]: item})))
+
+//  const arrayToObject4 = (arr, key) => 
+// arr.reduce((obj, item) => ((obj[[item[key]]] = item), obj), {});
+
+//  const arrayToObject5 = (arr, key) => {
+//      const res = {};
+//      arr.forEach(obj => {
+//          res[obj[key]] = obj;
+//      })
+//      return res
+//  }
+
+//  console.log("----------key------------")
+
+//  console.log(arrayToObject5(data, 'key'))
+
+// const arr = [
+//    { key: 1, name: "A", condition: 'Array' },
+//    { key: 4, name: "B", condition: 'Berry' },
+//    { key: 7, name: "C", condition: 'Java' },
+//    { key: 11, name: "D", condition: 'Kerry' },
+//    { key: 12, name: "E", condition: 'Serrey' }
+//  ]
+
+ 
+//===============================================
+// const getFilter =(key, value)=>{
+//    const newArr=arr.filter((val)=>{
+//       return val.name.includes(value)
+//    })
+//    console.log(newArr);
+// }
+// getFilter('name','A')
+// && val.key ==key
+//==================================================
+// let obj = arr.find((val,obj)=>{
+//    if(val.name==='E'){
+//       arr[obj]={name:'new string',key:'ret',condition:'Js'};
+//       return true;
+//    }
+// })
+// console.log(arr);
+//==============================================
+// let arr = [ 
+//    { name:"string 1", value:"this", other: "that" },
+//  { name:"string 2", value:"this", other: "that" }
+//  ];
+
+//   let obj = arr.find(o => o.name === 'string 1'); 
+//   console.log(obj)
+//==============================================
+// function findMatches(arr, searchString){
+//    const matches = [];
+ 
+//    arr.forEach((obj) => {
+//      for (const key in obj) {
+//        if (obj[key].includes(searchString)){
+//          matches.push(obj[key]);
+//        }
+//      }
+//    });
+ 
+//    return matches;
+//  }
+ 
+//  const arr = [
+//    {name: 'bent', town: 'kansas'},
+//    {name:'abs', town:'vegas'},
+//    {name:'def', town:'vegas'},
+//    {name:'ght', town:'vegas'},
+//    {name:'top', town:'vegas'},
+//    // { key: 1, name: "A", condition: 'Array' },
+//    // { key: 4, name: "B", condition: 'Berry' },
+//    // { key: 7, name: "C", condition: 'Java' },
+//    // { key: 11, name: "D", condition: 'Kerry' },
+//    // { key: 12, name: "E", condition: 'Serrey' }
+//  ];
+ 
+//  console.log(findMatches(arr, "a"));
+//  // => ["bent", "benny"]
+ 
+//  console.log(findMatches(arr, "benn"));
+//  // => ["benny"]
+
+//=====================================================================
+//  var __POSTS = [ 
+// 	{ id: 1, title: 'Apple', description: 'Description of post 1' }, 
+// 	{ id: 2, title: 'Orange', description: 'Description of post 2' }, 
+// 	{ id: 3, title: 'Guava', description: 'Description of post 3' }, 
+// 	{ id: 4, title: 'Banana', description: 'Description of post 4' }
+// ];
+
+// // Search for post with title == "Guava"
+// var __FOUND = -1;
+// for(var i=0; i<__POSTS.length; i++) {
+// 	if(__POSTS[i].title == '1Apple') {
+// 		// __FOUND is set to the index of the element
+// 		__FOUND = i;
+// 		break;
+// 	}
+// }
+
+// // On success __FOUND will contain the index of the element
+// // On failure it will contain -1  
+// console.log(__FOUND); // 2
+//===================================================================
+// let cities = [
+//   {name: 'Los Angeles', population: 3792621},
+//   {name: 'New York', population: 8175133},
+//   {name: 'Chicago', population: 2695598},
+//   {name: 'Houston', population: 2099451},
+//   {name: 'Philadelphia', population: 1526006}
+// ];
+// let bigCities = [];
+// for (let i = 0; i < cities.length; i++) {
+//     if (cities[i].population > 7000000) {
+//         bigCities.push(cities[i]);
+//     }
+// }
+// console.log(bigCities);
+//=================================================================
+// const myTodos=['Buy Bread','Go to gym','Record youtube videos','Hello World']
+
+const newTodos=[{
+    title:'Buy Bread', isDont:false
+  },{
+    title:'Go to gym', isDont:false
+  },{
+    title:'Record youtube videos', isDont:true
+  },{
+    title:'Hello World', isDont:false
+  }]
+
+ // Metho 1 index
+
+  // const index = newTodos.findIndex(function(todo,index){
+  //   return todo.title === 'Go to gym'
+  // })
+  // console.log(index);
+
+//Method 2
+const findTodo = function(myTodos,title){
+  const index = myTodos.findIndex(function(todo,index){
+    return todo.title.toLowerCase() === title.toLowerCase()
   })
-  
- .reduce((total,d)=>total + d.budget, 0);
+  return  myTodos[index]
+}
+let printMe =findTodo(newTodos, 'Go to gym')
+console.log(printMe);
 
-  console.log(amout);
-  console.log(amout);
-  console.log("\^reet\gi");
-  console.log(amout);
-  console.log(amout);
-  console.log(amout);
-  console.log(amout);
-  console.log(amout);
-  console.log(amout);
-  
+//Method 3
+
+// const findTodo = function(myTodo,title){
+//   const titleReturned = myTodo.find(function(todo,index){
+//     return todo.title.toLowerCase() === title.toLowerCase()
+//   })
+//   return titleReturned
+// }
+// let printMe = findTodo(newTodos, 'Hello World')
+// console.log(printMe);
