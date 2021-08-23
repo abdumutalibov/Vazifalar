@@ -570,15 +570,15 @@ console.log(arr)
 //=================================================================
 // const myTodos=['Buy Bread','Go to gym','Record youtube videos','Hello World']
 
-const newTodos=[{
-    title:'Buy Bread', isDont:false
-  },{
-    title:'Go to gym', isDont:false
-  },{
-    title:'Record youtube videos', isDont:true
-  },{
-    title:'Hello World', isDont:false
-  }]
+// const newTodos=[{
+//     title:'Buy Bread', isDont:false
+//   },{
+//     title:'Go to gym', isDont:false
+//   },{
+//     title:'Record youtube videos', isDont:true
+//   },{
+//     title:'Hello World', isDont:false
+//   }]
 
  // Metho 1 index
 
@@ -588,14 +588,14 @@ const newTodos=[{
   // console.log(index);
 
 //Method 2
-const findTodo = function(myTodos,title){
-  const index = myTodos.findIndex(function(todo,index){
-    return todo.title.toLowerCase() === title.toLowerCase()
-  })
-  return  myTodos[index]
-}
-let printMe =findTodo(newTodos, 'Go to gym')
-console.log(printMe);
+// const findTodo = function(myTodos,title){
+//   const index = myTodos.findIndex(function(todo,index){
+//     return todo.title.toLowerCase() === title.toLowerCase()
+//   })
+//   return  myTodos[index]
+// }
+// let printMe =findTodo(newTodos, 'Go to gym')
+// console.log(printMe);
 
 //Method 3
 
@@ -607,3 +607,97 @@ console.log(printMe);
 // }
 // let printMe = findTodo(newTodos, 'Hello World')
 // console.log(printMe);
+// let str ='safdfggdaaaaasfa'
+// let a=0
+// for(let i =0;i<str.length; i++)
+//    if(str.charAt(i)==='a'){
+//       a++;
+// }
+   
+
+// console.log('a:',a);
+// let newArr=0
+// function is(arra,number){
+//    for(let i=0; i<arra.length; i++){
+//       for(let j=0;j<i.length;j++){
+//          if (arra[i]+arra[j]/2==number){
+//             newArr+= arra[i] + arra[j]
+//             return newArr++
+//          }
+//    }
+//    }
+//    return newArr
+// }
+
+// console.log(is(), 2);
+
+
+// function pairwiseDifference(arr , n) {
+//    var diff=0
+//    for (i = 0; i < n - 1; i++) {
+
+//        // absolute difference between
+//        // consecutive numbers
+//        diff =(arr[i] + arr[i + 1]);
+//        console.log(diff + " ")
+//    }
+// }
+
+// // Driver Code
+
+//    var arr = [ 4, 10, 15, 5, 6 ];
+//    var n = arr.length;
+
+//    pairwiseDifference(arr, n);
+
+// This code contributed by umadevi9616
+
+// function is(value, index){
+//    var dif =0;
+//    for(let i=0 ;i<index-1;i++){
+//       for(let j=1 ;j<i;j++){
+//          dif=(value[i]+value[j])
+//          console.log(dif++);
+//       } 
+//    }
+// }
+// var are=[1,3,5,7]
+// var index =are.length
+//  is(are,index)
+
+// function larg(arr){
+//    var largeNum =0;
+//    var newArr =[];
+//    for(var i=0; i <arr.lenght;i++){
+//       for(var j=0;j<arr[i].lenght; j++){
+//          if(arr[i][j]>largeNum){
+//             largeNum=arr[i][j];
+//          }
+//          return largeNum
+//       }
+//    }
+//    return newArr.push(largeNum)
+// }
+// larg([4,5,1,3])
+// console.log(arr);
+
+
+
+function largestOfFour(arr) {
+  // You can do this!
+  var newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    var largeNum = '';
+    for (var j = 0; j < arr[i].length; j++) {
+      if (arr[i][j] > largeNum) {
+        largeNum = arr[i][j];
+        newArr.push(largeNum);
+      }
+        
+    } 
+  }
+  return newArr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+    `indent preformatted text by 4 spaces`
