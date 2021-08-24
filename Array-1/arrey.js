@@ -683,21 +683,103 @@ console.log(arr)
 
 
 
-function largestOfFour(arr) {
-  // You can do this!
-  var newArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    var largeNum = '';
-    for (var j = 0; j < arr[i].length; j++) {
-      if (arr[i][j] > largeNum) {
-        largeNum = arr[i][j];
-        newArr.push(largeNum);
-      }
+// function largestOfFour(arr) {
+//   // You can do this!
+//   var newArr = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     var largeNum = '';
+//     for (var j = 0; j < arr[i].length; j++) {
+//       if (arr[i][j] > largeNum) {
+//         largeNum = arr[i][j];
+//         newArr.push(largeNum);
+//       }
         
-    } 
-  }
-  return newArr;
-}
+//     } 
+//   }
+//   return newArr;
+// }
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
-    `indent preformatted text by 4 spaces`
+
+// // `indent preformatted text by 4 spaces`
+// console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]))
+//===================================Uy ishi
+
+// let arr =[
+//   {name: 'Jon', status:'Doctore'},
+//   {name: 'Marshel', status:'Doctore'},
+//   {name: 'JumanJi', status:'Doctore'},
+//   {name: 'Mirshakar', status:'Doctore'},
+//   {name: 'Komol', status:'Doctore'},
+//   {name: 'Qaxor', status:'Doctore'},
+//   {name: 'AAAAAAAAAAAAAAAbduraxm', status:'Chelovek'},
+// ]
+// let words=[];
+// let words2 =[]
+// arr.forEach((value)=>{
+//   if(value && value.name){
+//     for(let i=0;i<value.name.length; i++){
+//       const e=value.name[i];
+//       if(words.filter(f=>f.word==e).length==0){
+//         words.push({word:e, count:1})
+//       }else{
+//         words =words.map(m =>{
+//           if(m.word==e){
+//             m.count=m.count+1
+//           }
+//           return m
+//         })
+//       }
+//     }
+//   }
+// })
+// console.log(words);
+
+
+
+
+
+let arr =[
+  {name: 'Jon', status:'Doctore'},
+  {name: 'Marshel', status:'Doctore'},
+  {name: 'JumanJi', status:'Doctore'},
+  {name: 'Mirshakar', status:'Doctore'},
+  {name: 'Komol', status:'Doctore'},
+  {name: 'Qaxor', status:'Doctore'},
+  {name: 'AAAAAAAAAAAAAAAbduraxm', status:'Chelovek'},
+]
+let words=[];
+let words2 =[]
+arr.forEach((value)=>{
+  if(value&& value.status){
+    for(let i=0;i<value.status.length; i++){
+      const e=value.status[i];
+      if(words2.filter(f=>f.word==e).length==0){
+        words2.push({word:e, count:1})
+      }else{
+        words2 =words2.map(m =>{
+          if(m.word==e){
+            m.count=m.count+1
+          }
+          return m
+        })
+      }
+    }
+  }
+  if(value&&value.name){
+    for(let i=0;i<value.name.length; i++){
+      const e=value.name[i];
+      if(words.filter(f=>f.word==e).length==0){
+        words.push({word:e, count:1})
+      }else{
+        words =words.map(m =>{
+          if(m.word==e){
+            m.count=m.count+1
+          }
+          return m
+        })
+      }
+    }
+  }
+})
+console.log('Name',words);
+console.log( 'Status',words2);
