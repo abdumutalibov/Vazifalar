@@ -48,13 +48,13 @@
 // arrOne.splice(1,1);
 // console.log(arrOne)
 
-// let arrTwo =['Vanya', 'ishtvan', 'Olya'];
-// let removed = arrTwo.splice(1,1);
-// console.log(removed);
+let arrTwo =['Vanya', 'ishtvan', 'Olya'];
+let removed = arrTwo.splice(1,1);
+console.log(removed);
 
-// let arrThree = ['Vanya', 'Ishtvan', 'Ola'];
-// arrThree.splice(1,1,13213)
-// console.log(arrThree,'j')
+let arrThree = ['Vanya', 'Ishtvan', 'Ola'];
+arrThree.splice(1,1,13213)
+console.log(arrThree,'j')
 
 // let arrFour=['Vanya', 'Ishtvan', 'Ola']
 // arrFour.splice(1,0 ,'KOlya','Ruslan')
@@ -738,48 +738,48 @@ console.log(arr)
 
 
 
-let arr =[
-  {name: 'Jon', status:'Doctore'},
-  {name: 'Marshel', status:'Doctore'},
-  {name: 'JumanJi', status:'Doctore'},
-  {name: 'Mirshakar', status:'Doctore'},
-  {name: 'Komol', status:'Doctore'},
-  {name: 'Qaxor', status:'Doctore'},
-  {name: 'AAAAAAAAAAAAAAAbduraxm', status:'Chelovek'},
-]
-let words=[];
-let words2 =[]
-arr.forEach((value)=>{
-  if(value&& value.status){
-    for(let i=0;i<value.status.length; i++){
-      const e=value.status[i];
-      if(words2.filter(f=>f.word==e).length==0){
-        words2.push({word:e, count:1})
-      }else{
-        words2 =words2.map(m =>{
-          if(m.word==e){
-            m.count=m.count+1
-          }
-          return m
-        })
-      }
-    }
-  }
-  if(value&&value.name){
-    for(let i=0;i<value.name.length; i++){
-      const e=value.name[i];
-      if(words.filter(f=>f.word==e).length==0){
-        words.push({word:e, count:1})
-      }else{
-        words =words.map(m =>{
-          if(m.word==e){
-            m.count=m.count+1
-          }
-          return m
-        })
-      }
-    }
-  }
-})
-console.log('Name',words);
-console.log( 'Status',words2);
+// let arr =[
+//   {name: 'Jon', status:'Doctore'},
+//   {name: 'Marshel', status:'Doctore'},
+//   {name: 'JumanJi', status:'Doctore'},
+//   {name: 'Mirshakar', status:'Doctore'},
+//   {name: 'Komol', status:'Doctore'},
+//   {name: 'Qaxor', status:'Doctore'},
+//   {name: 'AAAAAAAAAAAAAAAbduraxm', status:'Chelovek'},
+// ]
+// let words=[];
+// let words2 =[]
+// arr.forEach((value)=>{
+//   if(value&& value.status){
+//     for(let i=0;i<value.status.length; i++){
+//       const e=value.status[i];
+//       if(words2.filter(f=>f.word==e).length==0){
+//         words2.push({word:e, count:1})
+//       }else{
+//         words2 =words2.map(m =>{
+//           if(m.word==e){
+//             m.count=m.count+1
+//           }
+//           return m
+//         })
+//       }
+//     }
+//   }
+//   if(value&&value.name){
+//     for(let i=0;i<value.name.length; i++){
+//       const e=value.name[i];
+//       if(words.filter(f=>f.word==e).length==0){
+//         words.push({word:e, count:1})
+//       }else{
+//         words =words.map(m =>{
+//           if(m.word==e){
+//             m.count=m.count+1
+//           }
+//           return m
+//         })
+//       }
+//     }
+//   }
+// })
+// console.log('Name',words);
+// console.log( 'Status',words2);

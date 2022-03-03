@@ -1,9 +1,9 @@
-// const tel ={
-//   name: 'Jony',
-//   age: 23,
-//   countr: 'China',
-// }
-//console.log(tel.name,tel.age, tel.countr, tel);
+const tel ={
+  name: 'Jony',
+  age: 23,
+  countr: 'China',
+}
+console.log(tel.name,tel.age, tel.countr, tel);
 
 // function make(name,age,countr){
 //   return {
@@ -60,14 +60,14 @@
 
 
 //.............................Object assign
-// let userInfo={
-//   name:'Kolya',
-//   age:30,
-// }
-// let user=Object.assign({},userInfo)
-// user.age=18
-// console.log(userInfo)
-// console.log(user)
+let userInfo={
+  name:'Kolya',
+  age:30,
+}
+let user=Object.assign({},userInfo)
+user.age=18
+console.log(userInfo)
+console.log(user)
 
 //...........................Object assign another way 2
 
@@ -305,4 +305,7 @@ users.forEach(user => console.log(user.id)); // Pete, Ann, John
 
 // users.sort((a,b)=> a.age-b.age)
 // users.sort((a,b)=> a.id-b.id)
+// console.log(users)
+// console.log(users)
+// console.log(users)
 // console.log(users)

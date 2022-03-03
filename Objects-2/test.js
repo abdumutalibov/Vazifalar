@@ -60,14 +60,14 @@
 
 ////////////////////,.........................
 
-let object = {
-    a: { value: 5, meta: "sss" },
-    b: { value: 1, meta: "rrr" },
-    c: { value: 6, meta: "ttt" } ,
-  };
+// let object = {
+//     a: { value: 5, meta: "sss" },
+//     b: { value: 1, meta: "rrr" },
+//     c: { value: 6, meta: "ttt" } ,
+//   };
 
-  let output={};
-  Object.keys(object).map(function(item){
-    output[item]=object[item]['a']
-  })
-  console.log(output);
+//   let output={};
+//   Object.keys(object).map(function(item){
+//     output[item]=object[item]['a']
+//   })
+//   console.log(output);
